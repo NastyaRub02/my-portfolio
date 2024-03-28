@@ -1,0 +1,281 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #252525;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1680px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.container_2 {
+    max-width: 1720px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* BG */
+.about {
+    position: relative;
+    padding: 100px 0 100px;
+  }
+  
+  .about_h1,
+  .about_title {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 4s ease, transform 2s ease;
+  }
+  
+  .about_h1 {
+    font-size: 100px;
+    padding-bottom: 20px;
+  }
+  
+  .about_title {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 830px;
+  }
+  
+  .about.animate .about_h1,
+  .about.animate .about_title {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+/*  */
+.social-media {
+    padding: 0 50px 50px 0;
+    float: right;
+}
+
+.social-media-icons_text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media-icons_text + .social-media-icons_text{
+    padding-top: 15px;
+}
+
+.social-media-icons_text a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform:capitalize;
+}
+
+.social-media-icons_text a:hover {
+    color: #E8C8FF;
+}
+
+/*  */
+.about_text_bg {
+    position: relative;
+    
+    background-image: url(../img/Bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 944px;
+}
+
+.about_text_bg p {
+    position: absolute;
+    top: 45%;
+    right: 34%;
+    transform: translate(50%, -50%); /* Смещаем текст к центру */
+
+    color: #442453;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 688px;
+}
+
+/* MY WORK */
+.about_my-work {
+    padding: 100px 0;
+}
+
+.about_my-work_h2{
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+/* CARDS */
+.card_container {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 510px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #BD9DD9;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+
+/* ABOUT MY SKILLS */
+.about_my-skills {
+    padding-bottom: 100px;
+}
+
+.about_my-skills_h2 {
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.about_my-skills_item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about_my-skills_item + .about_my-skills_item{
+    margin-top: 50px;
+}
+
+.about_my-skills_item_text {
+    max-width: 730px;
+}
+
+.about_my-skills_item_text p span{
+    color: #E8C8FF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about_my-skills_item_text p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about_my-clients_a{
+    text-decoration: underline;
+    color: #E8C8FF;
+    font-weight: 600;
+}
+
+.about_my-clients_a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* CLIENTS */
+.about_my-clients .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.about_my-clients_h2 {
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.about_my-clients_text {   
+    max-width: 980px;
+}
+
+.about_my-clients_text p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about_my-clients_text p span {
+    color: #E8C8FF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about_my-clients_text p + p{
+    margin-top: 64px;
+}
+
+/*  */
+
+.section_white-crane {
+    padding-bottom: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Анимация для изображения крана */
+.bg_white-crane {
+    width: 100%;
+    background-image: url('../img/crane/crane1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* MODAL */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62, 60, 64, 0.9);
+    z-index: 1000;
+  }
+  
+  .modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .modal_content img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
