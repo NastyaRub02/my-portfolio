@@ -7,23 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 });
 
-// Modal
-function openModal(imageUrl) {
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal_img');
-    modal.style.display = 'block';
-    modalImg.src = imageUrl;
+// модал
+
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
   }
-  
-  function closeModal() {
-    const modal = document.getElementById('modal');
-    modal.style.display = 'none';
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
   }
-  
+
+  // Закрытие модального окна при нажатии вне его
   window.onclick = function(event) {
-    const modal = document.getElementById('modal');
-    if (event.target == modal) {
-      modal.style.display = 'none';
+    const modals = document.getElementsByClassName('modal');
+    for (let i = 0; i < modals.length; i++) {
+      if (event.target === modals[i]) {
+        modals[i].style.display = 'none';
+      }
     }
   }
-  
