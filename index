@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>portfolio</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+      <header class="hero-header">
+    <div class="container_header_footer">
+        <div class="hero-grid">
+    <!-- Верх слева -->
+    <div class="top-left">
+      <h1 class="hero__title">
+        Hi, I’m Nastya Rubtsova — a graphic designer + Frontend.<br>
+        From concept to execution.
+      </h1>
+      <img src="img/header/o1.png" alt="" class="circle1">
+    </div>
+
+    <!-- Верх справа -->
+    <div class="top-right">
+<p class="hero__side-text">GRAPHIC DESIGNER,
+FRONTEND
+</p>
+        <div class="circle3">
+        <img src="img/header/o3.png" alt="">
+        </div>
+    </div>
+
+    <!-- Низ слева -->
+    <div class="bottom-left">
+        <img src="img/header/ros.svg" alt="" class="hero__logo">
+        <div class="circle2">
+        <img src="img/header/o2.png" alt="">
+        </div>
+    </div>
+
+    <!-- Низ справа -->
+     <a href="#section1">
+    <div class="bottom-right">
+      <button><img src="img/header/contact_me.svg" alt="contact_me" class="arrow-contact_me"></button>
+    </div>
+    </a>
+  </div>
+
+  <img src="img/header/o4.svg" alt="" class="hero__middle-photo">
+  <!-- <img src="img/header/photo_me.png" alt="" class="hero__middle-photo hero__middle-photo-me"> -->
+</header>
+
+    <!-- MY SKILLS -->
+    <section class="my_skills mtsection">
+        <div class="container">
+            <h1 class="title">MY SKILLS</h1>
+            <div class="arrow-my-skills-hero">
+                <a href="#content-design_tools">
+            <div class="arrow-design_tools arrow-my_skills">
+               <button><img class="img-arrow-design_tools" src="img/my_skills/afk/Group 226.svg"></button>
+            </div>
+            </a>
+            <a href="#content-development">
+            <div class="arrow-development arrow-my_skills">
+                <button><img class="img-arrow-development" src="img/my_skills/afk/Group 226-1.svg"></button>
+            </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESIGN TOOLS -->
+    <section class="design_tools mtsection" id="content-design_tools">
+        <div class="container">
+            <h1 class="title">DESIGN TOOLS</h1>
+
+            <div class="skills-card">
+      <!-- Левая часть с картинкой -->
+      <div class="skills-card__image">
+        <img src="img/design_tools/photo.png" alt="Design Tools">
+      </div>
+
+      <div class="circle-top-right-design_tools">
+        <img src="img/design_tools/circle.svg" alt="">
+      </div>
+
+      <!-- Правая часть с текстом -->
+      <div class="skills-card__content">
+
+        <h2 class="skills-card__title">Photoshop, Illustrator, Figma, Tilda</h2>
+       
+        <div class="text-hero-card__content-design_tools">
+            <div class="text-card_content">
+                <div class="circle-text-card_content">
+                    <img src="img/design_tools/circle/c1.svg" alt="">
+                </div>
+                <p class="text-card-content-p">
+                    Mastering advanced techniques to create unique and eye-catching graphic designs.(Создаю уникальную графику, обрабатываю изображения и работаю с композициями)
+                </p>
+            </div>
+            <div class="text-card_content">
+                <div class="circle-text-card_content">
+                    <img src="img/design_tools/circle/c2.svg" alt="">
+                </div>
+                <p class="text-card-content-p">
+Designing modern, functional UI/UX for websites and apps with a focus on usability.(Разрабатываю современные и удобные интерфейсы для сайтов и приложений)                
+                </p>
+            </div>
+            <div class="text-card_content">
+                <div class="circle-text-card_content">
+                    <img src="img/design_tools/circle/c3.svg" alt="">
+                </div>
+                <p class="text-card-content-p">
+Building responsive, visually appealing websites with seamless user experience.(Создаю стильные сайты с продуманным UX)                
+                </p>
+            </div>
+        </div>
+
+        <div class="circle-skills-card__content">
+            <img src="img/design_tools/o1.png" alt="">
+        </div>
+
+        <a href="#project">
+        <button><img src="img/design_tools/project_off.svg" alt="project" class="arrow-project"></button>
+        </a>
+    </div>
+    </div>
+
+        </div>
+    </section>
+
+    <!-- DEVELOPMENT -->
+    <section class="development mtsection" id="content-development">
+        <div class="container">
+            <h1 class="title">DEVELOPMENT</h1>
+
+            <div class="skills-card skills-card-development">
+                 <!-- Правая часть с текстом -->
+      <div class="skills-card__content skills-card__content-development">
+
+        <h2 class="skills-card__title skills-card__title-development">Frontend, Backend</h2>
+       
+        <div class="text-hero-card__content-design_tools text-hero-card__content-design_tools-development">
+            <div class="text-card_content text-card_content-development">
+                <p class="text-card-content-p text-card-content-p-development">
+                    Frontend: HTML, CSS, JavaScript
+                </p>
+                <div class="circle-text-card_content circle-text-card_content-development">
+                    <img src="img/development/circle/Vector 3.svg" alt="">
+                </div>
+
+                <div class="circle-text-card_content circle-text-card_content-development-blue">
+                    <img src="img/development/circle/blue.svg" alt="">
+                </div>
+            </div>
+
+            <div class="text-card_content text-card_content-development">
+                <p class="text-card-content-p text-card-content-p-development">
+                    Backend: SQL (basic), PHP (basic)
+                </p>
+                <div class="circle-text-card_content circle-text-card_content-development">
+                    <img src="img/development/circle/Vector 3.svg" alt="">
+                </div>
+
+                <div class="circle-text-card_content circle-text-card_content-development-blue">
+                    <img src="img/development/circle/blue.svg" alt="">
+                </div>
+            </div>
+
+            <div class="text-card_content text-card_content-development">
+                <p class="text-card-content-p text-card-content-p-development">
+Full-cycle development from concept to deployment
+(Полный цикл: от идеи до запуска)             
+                </p>
+                <div class="circle-text-card_content circle-text-card_content-development">
+                    <img src="img/development/circle/Vector 5.svg" alt="">
+                </div>
+
+                <div class="circle-text-card_content circle-text-card_content-development-blue">
+                    <img src="img/development/circle/blue.svg" alt="">
+                </div>
+
+                <!-- <picture class="circle-text-card_content">
+                <source srcset="img/development/circle/blue.svg" media="(min-width: 1501px)" />
+                <img src="img/development/circle/Vector 5.svg" />
+                </picture> -->
+            </div>
+        </div>
+
+        <div class="circle-skills-card__content circle-skills-card__content-development">
+            <img src="img/development/o1.png" alt="">
+        </div>
+
+        <a href="#project">
+        <button><img src="img/development/project_off.svg" alt="project" class="arrow-project-development"></button>
+        </a>
+    </div>
+
+       <!-- Левая часть с картинкой -->
+      <div class="skills-card__image">
+        <img src="img/development/photo.png" alt="Design Tools">
+      </div>
+
+      <div class="circle-top-right-design_tools circle-top-right-design_tools-development">
+        <img src="img/development/circle.svg" alt="">
+      </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects mtsection" id="project">
+        <div class="container">
+            <div class="arrow-projects-hero">
+                <div class="arrow-projects arrow-projects-left">
+                    <a href="#presentations">
+                        <button>
+                    <img src="img/project/off/presentations.svg" alt="" class="arrow-project-presentations">
+                        </button>
+                    </a>
+                    <a href="#infographics">
+                        <button>
+                    <img src="img/project/off/infographics.svg" alt="" class="arrow-project-infographics">
+                        </button>
+                    </a>
+                </div>
+                <div class="arrow-projects arrow-projects-right">
+                    <a href="#banners">
+                        <button>
+                    <img src="img/project/off/banners.svg" alt="" class="arrow-project-banners">
+                        </button>
+                    </a>
+                    <a href="#web_design">
+                        <button>
+                    <img src="img/project/off/web_design.svg" alt="" class="arrow-project-web_design">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="presentations mtsection" id="presentations">
+        <div class="container">
+            <h1 class="title">PRESENTATIONS</h1>
+
+             <div class="presentations-grid">
+      <!-- Левый квадрат -->
+      <div class="presentations-box presentations-box-left">
+        <img src="img/PRESENTATIONS/circle.svg" alt="icon" class="presentations-icon">
+        <p class="presentations-text">PRESENTATIONS</p>
+      </div>
+
+            <!-- Прямоугольник справа -->
+            <div class="presentations-box presentations-img" 
+                data-img="img/PRESENTATIONS/3prs.png"
+                style="background-image: url('img/PRESENTATIONS/3prs.png');"></div>
+
+            <!-- Два нижних квадрата -->
+            <div class="presentations-box presentations-img" 
+                data-img="img/PRESENTATIONS/1prs.png"
+                style="background-image: url('img/PRESENTATIONS/1prs.png');"></div>
+
+            <div class="presentations-box presentations-img" 
+                data-img="img/PRESENTATIONS/2prs.png"
+                style="background-image: url('img/PRESENTATIONS/2prs.png');"></div>
+
+            <!-- <div class="presentations-box presentations-img" 
+                data-img="img/PRESENTATIONS/flower_saver.png"
+                style="background-image: url('img/PRESENTATIONS/flower_saver.png');"></div> -->
+
+    </div>
+        </div>
+    </section>
+
+    <!-- INFOGRAPHICS -->
+    <section class="infographics mtsection" id="infographics">
+        <div class="container">
+            <h1 class="title">INFOGRAPHICS</h1>
+
+      <div class="presentations-grid presentations-grid-ifograf">
+  <div class="presentations-box presentations-box-left">
+    <img src="img/PRESENTATIONS/circle.svg" alt="icon" class="presentations-icon">
+    <p class="presentations-text">INFOGRAPHICS</p>
+  </div>
+
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/1.png" style="background-image: url('img/INFOGRAPHICS/1.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/2.png" style="background-image: url('img/INFOGRAPHICS/2.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/3.png" style="background-image: url('img/INFOGRAPHICS/3.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/4.png" style="background-image: url('img/INFOGRAPHICS/4.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/5.png" style="background-image: url('img/INFOGRAPHICS/5.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/6.png" style="background-image: url('img/INFOGRAPHICS/6.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/7.png" style="background-image: url('img/INFOGRAPHICS/7.png');"></div>
+    <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/8.png" style="background-image: url('img/INFOGRAPHICS/8.png');"></div>
+      <div class="presentations-box presentations-img" data-img="img/INFOGRAPHICS/9.png" style="background-image: url('img/INFOGRAPHICS/9.png');"></div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- BANNERS -->
+    <section class="banners mtsection" id="banners">
+        <div class="container">
+            <h1 class="title">BANNERS</h1>
+
+            <div class="presentations-grid presentations-grid-ifograf">
+  <div class="presentations-box presentations-box-left">
+    <img src="img/PRESENTATIONS/circle.svg" alt="icon" class="presentations-icon">
+    <p class="presentations-text">BANNERS</p>
+  </div>
+
+  <div class="presentations-box presentations-img" data-img="img/banners/1.png" style="background-image: url('img/banners/1.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/2.png" style="background-image: url('img/banners/2.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/3.png" style="background-image: url('img/banners/3.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/4.png" style="background-image: url('img/banners/4.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/5.png" style="background-image: url('img/banners/5.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/6.png" style="background-image: url('img/banners/6.png');"></div>
+  <div class="presentations-box presentations-img" data-img="img/banners/7.png" style="background-image: url('img/banners/7.png');"></div>
+    <div class="presentations-box presentations-img" data-img="img/banners/8.png" style="background-image: url('img/banners/8.png');"></div>
+</div>
+        </div>
+    </section>
+
+    <!-- WEB-DESIGN -->
+    <section class="web_design mtsection" id="web_design">
+        <div class="container">
+            <h1 class="title">WEB-DESIGN</h1>
+
+             <div class="presentations-grid">
+      <!-- Левый квадрат -->
+      <div class="presentations-box presentations-box-left">
+        <img src="img/PRESENTATIONS/circle.svg" alt="icon" class="presentations-icon">
+        <p class="presentations-text">WEB-DESIGN</p>
+      </div>
+
+            <!-- Прямоугольник справа -->
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/desktop.png"
+                style="background-image: url('img/WEB-DESIGN/desktop.png');"></div>
+
+            <!-- Два нижних квадрата -->
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/flower.png"
+                style="background-image: url('img/WEB-DESIGN/flower.png');"></div>
+
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/forest.png"
+                style="background-image: url('img/WEB-DESIGN/forest.png');"></div>
+
+            
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/HOME.png"
+                style="background-image: url('img/WEB-DESIGN/HOME.png');"></div>
+
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/su.png"
+                style="background-image: url('img/WEB-DESIGN/su.png');"></div>
+
+            <div class="presentations-box presentations-img" 
+                data-img="img/WEB-DESIGN/forest2.png"
+                style="background-image: url('img/WEB-DESIGN/forest2.png');"></div>
+
+    </div>
+        </div>
+    </section>
+
+    <!-- MY CLIENTS AND COOPERATION -->
+    <section class="my_clients mtsection">
+        <div class="container">
+            <h1 class="title">MY CLIENTS AND COOPERATION</h1>
+
+            <div class="my_clients-hero-container">
+                <div class="my_clients-photo">
+                    <img src="img/my_clients/photo.png" alt="#" class="my_clients-photo-img">
+                </div>
+
+                <div class="my_clients-text-title-hero">
+                    <img src="img/my_clients/circle1.png" alt="" class="my_clients-text-img">
+                    <div class="text-hero-my_clients">
+                    <p class="my_clients-text-p">I am proud of my collaboration with the "<span><a href="https://bel-zhuravl.ru/">Bely Zhuravl</a></span>" beauty salon, for which I delivered a unique and effective web project.</p>
+                    <p class="my_clients-text-p">Я горжусь сотрудничеством с салоном красоты «<span><a href="https://bel-zhuravl.ru/">Белый Журавль</a></span>», для которого реализовала уникальный и эффективный веб-проект.</p>
+                    </div>
+                </div>
+
+                <div class="four-blocks">
+                <div class="block block1">
+                    <img src="img/my_clients/circle2.png" alt="#" class="block-img-hero">
+                    <div class="hero-text-icon-block">
+                    <div class="icon-block"><img src="img/my_clients/number1.svg" alt="" class="icon-block-img"></div>
+                    <div class="text-hero-block">
+                        <h2 class="text-hero-block-h3">Prototyping and Analysis</h3>
+                        <p class="text-block-p">Started with a detailed prototype, aligning the design with the client's vision through iterative feedback.</p>
+                        <p class="text-block-p">Прототипирование и анализ – Начала с детального прототипа, согласовывая дизайн с видением клиента через итеративную обратную связь.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="block block2">
+                    <img src="img/my_clients/circle4.png" alt="#" class="block-img-hero">
+                    <div class="hero-text-icon-block">
+                    <div class="icon-block"><img src="img/my_clients/number2.svg" alt="" class="icon-block-img"></div>
+                    <div class="text-hero-block">
+                        <h2 class="text-hero-block-h3 text-hero-block-h3-brown">Visual Design</h3>
+                        <p class="text-block-p">Crafted an elegant and clean interface in Figma, emphasizing the salon’s premium appeal.</p>
+                        <p class="text-block-p">Визуальный дизайн – Создала элегантный и чистый интерфейс в Figma, подчеркивающий премиальность салона.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="block block3">
+                    <img src="img/my_clients/circle3.png" alt="" class="block-img-hero">
+                    <div class="hero-text-icon-block">
+                    <div class="icon-block"><img src="img/my_clients/number3.svg" alt="" class="icon-block-img"></div>
+                    <div class="text-hero-block">
+                        <h2 class="text-hero-block-h3">Photo Editing</h3>
+                        <p class="text-block-p text-hero-block-h3-brown">Enhanced images in Photoshop to convey the salon’s professionalism and ambiance.</p>
+                        <p class="text-block-p text-hero-block-h3-brown">Обработка фото – Улучшила изображения в Photoshop, чтобы передать профессионализм и атмосферу салона.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="block block4">
+                    <img src="img/my_clients/circle5.png" alt="" class="block-img-hero">
+                    <div class="hero-text-icon-block">
+                    <div class="icon-block"><img src="img/my_clients/number4.svg" alt="" class="icon-block-img"></div>
+                    <div class="text-hero-block">
+                        <h2 class="text-hero-block-h3">Development</h3>
+                        <p class="text-block-p">Built a fully responsive and user-friendly website on Tilda with seamless navigation and fast loading.</p>
+                        <p class="text-block-p">Разработка – Реализовала полностью адаптивный и удобный сайт на Tilda с бесшовной навигацией и быстрой загрузкой.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Контейнер стрелки -->
+                 <a href="https://bel-zhuravl.ru/">
+                    <button>
+                <div class="arrow-my_clients-hero">
+                <img src="img/my_clients/viev_off.svg" alt="arrow" class="arrow-my_clients-img">
+                </div>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <footer class="hero-footer" id="section1">
+        <div class="container_header_footer container_footer">
+            <h1 class="title title-footer">CONTACT ME</h1>
+
+            <div class="footer-contact_me__hero">
+                <div class="contact_me-hero contact_me-hero-vk">
+                    <img src="img/footer/vk.svg" alt="" class="contact_me-hero-vk-img">
+                    <p class="text-contact_me-hero"><a href="https://vk.com/nastyarub02">https://vk.com/nastyarub02</a></p>
+                </div>
+                <div class="contact_me-hero contact_me-hero-tg">
+                    <img src="img/footer/tg.svg" alt="" class="contact_me-hero-tg-img">
+                    <p class="text-contact_me-hero"><a href="https://t.me/NastyaRubtsova02">@NastyaRubtsova02</a></p>
+                </div>
+                <div class="contact_me-hero contact_me-hero-mail">
+                    <img src="img/footer/mail.svg" alt="" class="contact_me-hero-mail-img">
+                    <p class="text-contact_me-hero"><a href="#">nastarubcova981@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="solid-container-footer">
+                <img src="img/footer/solid.svg" alt="#" class="solid-container-footer img">
+            </div>
+
+            <div class="signature-container-footer-hero">
+                <img src="img/footer/ros.svg" alt="#" class="signature-container-footer-hero-img">
+            </div>
+
+            <div class="block-container-text-footer-hero">
+                <div class="block-container-footer">
+                    <img src="img/footer/o1.png" alt="" class="block-container-footer-img">
+                    <p class="text-container-footer-block">have a nice day</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Модальное окно -->
+<div class="modal" id="modal">
+  <span class="modal-close" id="modal-close">&times;</span>
+  <img class="modal-content" id="modal-img" alt="mockup">
+</div>
+
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
