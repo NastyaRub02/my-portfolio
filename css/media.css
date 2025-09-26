@@ -1,0 +1,860 @@
+    @media (max-width: 460px) {
+    .mtsection {
+      margin-top: 60px;
+    }
+  }
+
+
+
+/* Мобильные устройства, максимум ширины 768px */
+@media (max-width: 1200px) {
+  
+  /* Уменьшаем заголовок */
+  .top-left {
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: 22px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0; /* убираем лишние отступы */
+  }
+  /* Вертикальный текст */
+  .hero__side-text {
+    font-size: 36px;
+    top: 5%;   /* подкорректировать позицию */
+    right: 2%;
+  }
+
+  /* Если нужно, уменьшаем фото в центре */
+  .hero__middle-photo {
+    width: 300px; /* подбираешь размер под мобильный экран */
+    top: 50%;
+    left: 55%;
+  }
+
+  /* Контейнеры можно подвинуть, если они смещаются */
+  .bottom-left {
+    margin-top: 400px; /* меньше чем на десктопе */
+  }
+}
+
+@media (max-width: 900px) {
+  /* Скрываем все круги */
+  .circle1,
+  .circle2,
+  .circle3,
+  .hero__middle-photo {
+    display: none;
+  }
+    .container_header_footer {
+    padding: 40px 20px;
+  }
+}
+
+/* Очень маленькие экраны, максимум ширины 480px */
+@media (max-width: 800px) {
+
+    .hero-grid {
+        display: block;
+    }
+
+  /* Превращаем top-left в flex-контейнер */
+  .top-left {
+    display: flex;
+    flex-direction: column; /* вертикальный поток */
+    align-items: center;    /* центрируем по горизонтали */
+  }
+
+  /* Заголовок */
+
+  /* Вертикальный текст теперь горизонтальный и идёт под заголовком */
+  .hero__side-text {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 0 0; /* отступ сверху */
+    position: relative; /* отменяем абсолютное позиционирование */
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    display: block;
+    align-items: center;
+  }
+
+  .top-right {
+    margin: 0 auto;
+  }
+
+  .bottom-left {
+    margin: 0 auto;
+    margin-top: 360px;
+  }
+
+  .bottom-right {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .hero__title {
+    font-size: 16px;
+  }
+  .hero-header {
+    padding: 46px 30px;
+  }
+}
+
+@media (max-width: 518px) {
+  .bottom-right {
+    width: 220px;
+  }
+}
+
+/* MY SKILLS */
+@media (max-width: 900px) {
+  .arrow-my-skills-hero {
+    display: block;
+  }
+  .arrow-my_skills {
+    text-align: center;
+    width: 280px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .arrow-my_skills:not(:first-child) {
+  padding-top: 50px;
+  }
+  /* .block:not(:last-child) {
+  margin-bottom: 10px;
+  } */
+
+}
+
+@media (max-width: 380px) {
+  .arrow-my_skills {
+    width: 240px;
+  }
+}
+
+/* DESIGN TOOLS */
+/* --- Адаптив для планшетов и мобильных --- */
+@media (max-width: 1143px) {
+  .skills-card {
+    flex-direction: column;  /* ставим фото сверху, текст снизу */
+    align-items: center;
+    gap: 40px;
+    height: auto;            /* убираем фиксированную высоту */
+    padding: 40px 20px;
+  }
+
+  .skills-card__image img {
+    max-width: 100%;
+    margin-bottom: 0; /* убираем выход вниз */
+  }
+
+  .skills-card__content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-card__title {
+    font-size: 18px;
+  }
+
+  .text-hero-card__content-design_tools {
+    max-width: 100%;
+  }
+
+  .text-card_content {
+    justify-content: center;
+    text-align: left; /* точки и текст красиво */
+  }
+
+  .text-card-content-p {
+    font-size: 16px;
+  }
+
+  .circle-skills-card__content {
+    width: 100%;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2; /* делаем мягкий фон под текстом */
+  }
+
+  .skills-card__content button {
+    position: static; /* снимаем абсолютное позиционирование */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow-project {
+    width: 220px; /* уменьшаем кнопку */
+  }
+
+  .circle-top-right-design_tools {
+    display: none; /* можно скрыть круг справа сверху на мобилке */
+  }
+
+  .text-card_content {
+    max-width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .arrow-project button {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-card {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .skills-card__title {
+    font-size: 16px;
+  }
+
+  .text-card-content-p {
+    font-size: 14px;
+  }
+
+  .text-card-content-p-development {
+    font-size: 14px;
+  }
+
+  .arrow-project {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1560px) {
+  .skills-card {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .skills-card {
+    gap: 60px;
+  }
+
+  .circle-skills-card__content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .circle-skills-card__content {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+.skills-card__content button {
+      bottom: -120px;
+      width: 300px;
+}
+}
+
+
+@media (max-width: 1228px) {
+.arrow-project {
+      width: 250px;
+}
+.circle-top-right-design_tools {
+  width: 30px;
+}
+.skills-card__content button {
+     margin: 0 auto;
+     margin-top: 20px;
+     bottom: -90px;
+}
+}
+
+@media (max-width: 400px) {
+  .skills-card__content button {
+      width: 200px;
+}
+}
+
+/* DEVELOPMENT */
+@media (max-width: 1561px) {
+  .circle-skills-card__content-development {
+    left: 60%;
+}
+}
+
+@media (max-width: 1501px) {
+  .skills-card__title-development, .text-hero-card__content-design_tools-development p {
+  color: #CBDBF1;
+}
+.circle-text-card_content-development-blue {
+  display: block;
+}
+
+.circle-text-card_content-development {
+  display: none;
+}
+}
+
+@media (max-width: 1485px) {
+  .skills-card__content-development button {
+    left: -200px;
+}
+}
+
+@media (max-width: 1301px) {
+  .skills-card__content-development button {
+    left: 0px;
+    bottom: -200px;
+}
+}
+
+@media (max-width: 1301px) {
+  .skills-card__content-development button {
+    left: 0px;
+    bottom: -200px;
+}
+}
+
+@media (max-width: 1143px) {
+  .text-card_content-development {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* иконка слева, текст справа */
+    max-width: 800px;
+    margin: 0 auto; /* центрируем по родителю */
+    text-align: left;
+    gap: 20px; /* расстояние между кружком и текстом */
+  }
+
+  .circle-text-card_content-development-blue {
+    order: 1; /* слева */
+    flex-shrink: 0;
+  }
+
+  .text-card-content-p-development {
+    order: 2; /* справа от кружка */
+    flex: 1;
+    text-align: left;
+  }
+
+  /* На мобилке можно чуть уменьшить */
+  .text-card-content-p-development {
+    font-size: 16px;
+  }
+
+  .skills-card__content-development {
+    order: 1;
+  }
+
+  .arrow-project-development {
+    margin-top: 20px;
+    width: 250px;
+  }
+  
+}
+
+@media (max-width: 1143px) {
+  .skills-card__content-development button {
+    position: static !important; /* отменяем абсолютное */
+    margin: 20px auto 0;          /* стрелка по центру под текстом */
+    display: block;
+  }
+
+  .arrow-project-development {
+    width: 250px; /* уменьшаем ширину стрелки */
+  }
+
+  .skills-card__content-development {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* PROJECTS */
+/* Десктоп — как у тебя сейчас */
+.arrow-projects-hero {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* расстояние между колонками */
+}
+
+.arrow-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 86px; /* расстояние между стрелочками */
+}
+
+/* Планшеты */
+@media (max-width: 992px) {
+  .arrow-projects-hero {
+    gap: 40px; /* уменьшаем расстояние между колонками */
+  }
+  .arrow-projects {
+    gap: 60px; /* стрелки чуть ближе */
+  }
+    .arrow-projects img {
+    width: 280px; /* уменьшаем сами стрелки, если слишком большие */
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 700px) {
+  .arrow-projects-hero {
+    flex-direction: column; /* ставим колонки друг под другом */
+    align-items: center;    /* центрируем */
+    gap: 60px;              /* расстояние между блоками left и right */
+  }
+
+  .arrow-projects {
+    gap: 50px; /* расстояние между стрелочками внутри */
+  }
+
+}
+
+/* Очень маленькие экраны (айфоны SE и т.п.) */
+@media (max-width: 480px) {
+  .arrow-projects-hero {
+    gap: 40px;
+  }
+}
+
+/* PRESENTATIONS */
+/* --- PRESENTATIONS адаптив --- */
+
+/* Планшеты */
+@media (max-width: 1800px) {
+  .presentations-grid {
+    grid-template-columns: 1fr 1fr; /* делим на две равные */
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+
+  .presentations-box {
+    min-height: 250px;
+  }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+  .presentations-grid {
+    grid-template-columns: 1fr; /* всё в колонку */
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .presentations-box {
+    min-height: 200px;
+  }
+
+  .presentations-text {
+    font-size: 18px; /* уменьшаем текст */
+  }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+  .presentations-box {
+    min-height: 160px;
+  }
+
+  .presentations-text {
+    font-size: 16px;
+  }
+}
+
+/* FOOTER */
+/* --- FOOTER ADAPTIVE --- */
+
+@media (max-width: 1920px) {
+    .block-container-footer {
+      width: 400px;
+    }
+    .footer-contact_me__hero {
+        gap: 20px;
+    }
+}
+
+/* Планшеты и небольшие экраны */
+@media (max-width: 714px) {
+    .hero-footer {
+        padding: 40px 30px;
+        height: auto; /* чтобы блок подстраивался по высоте */
+    }
+
+    .title-footer {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .footer-contact_me__hero {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact_me-hero {
+        text-align: center;
+    }
+
+    .contact_me-hero-tg {
+        margin-top: 0;
+    }
+
+    .text-contact_me-hero {
+        padding-top: 15px;
+    }
+
+    .text-contact_me-hero a {
+        font-size: 18px;
+    }
+
+    .solid-container-footer,
+    .signature-container-footer-hero,
+    .block-container-text-footer-hero {
+        margin-top: 20px;
+    }
+
+    .text-container-footer-block {
+        font-size: 20px;
+    }
+.block-container-footer {
+        width: 300px;
+    }
+}
+
+/* Очень маленькие экраны, максимум 480px */
+@media (max-width: 480px) {
+    .title-footer {
+        font-size: 20px;
+    }
+
+    .footer-contact_me__hero {
+        gap: 20px;
+    }
+
+    .text-contact_me-hero a {
+        font-size: 14px;
+        word-break: break-word; /* перенос длинных ссылок */
+    }
+
+    .text-container-footer-block {
+        font-size: 16px;
+    }
+
+        .block-container-footer {
+        width: 200px;
+    }
+}
+
+/* MY CLIENTS */
+@media (max-width: 1627px) {
+  .text-block-p {
+    font-size: 16px;
+    min-width: 450px;
+}
+
+  .text-hero-block {
+    left: 60%;
+    transform: translate(-50%, -60%);
+  }
+
+  .icon-block {
+    left: 15%;
+  }
+}
+
+@media (max-width: 1456px) {
+  .text-block-p {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .text-block-p {
+    min-width: 400px;
+}
+
+  .text-hero-block {
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  .icon-block {
+    left: 15%;
+    transform: translate(700%, -250%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(700%, -300%);
+}
+}
+
+@media (max-width: 1276px) {
+  .icon-block {
+    left: 15%;
+    transform: translate(700%, -230%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(700%, -280%);
+}
+}
+
+@media (max-width: 1236px) {
+  .icon-block {
+    left: 15%;
+    transform: translate(650%, -230%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(650%, -280%);
+}
+
+.four-blocks {
+    gap: 40px;
+}
+}
+
+@media (max-width: 1194px) {
+  .icon-block {
+    left: 15%;
+    transform: translate(600%, -230%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(600%, -280%);
+}
+}
+
+@media (max-width: 1128px) {
+  .icon-block {
+    left: 15%;
+    transform: translate(560%, -230%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(560%, -250%);
+}
+}
+
+@media (max-width: 1046px) {
+  .four-blocks {
+    display: block;
+  }
+
+  .block:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .block1 .text-hero-block, .block2 .text-hero-block {
+    transform: translate(-50%, -60%);
+  }
+
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(-50%, -60%);
+  }
+  
+  .icon-block {
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media (max-width: 837px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(-100%, -60%);
+  }
+  
+  .icon-block {
+    transform: translate(-100%, -60%);
+  }
+}
+
+@media (max-width: 793px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(700%, -280%);
+  }
+  
+  .icon-block {
+    transform: translate(700%, -280%);
+  }
+
+  .text-hero-my_clients {
+    width: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(700%, -250%);
+  }
+  
+  .icon-block {
+    transform: translate(700%, -250%);
+  }
+}
+
+@media (max-width: 680px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(700%, -200%);
+  }
+  
+  .icon-block {
+    transform: translate(700%, -200%);
+  }
+}
+
+@media (max-width: 680px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(600%, -280%);
+  }
+  
+  .icon-block {
+    transform: translate(600%, -280%);
+  }
+}
+
+@media (max-width: 658px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(600%, -200%);
+  }
+  
+  .icon-block {
+    transform: translate(600%, -200%);
+  }
+}
+
+@media (max-width: 604px) {
+  .block1 .icon-block, .block2 .icon-block {
+    transform: translate(500%, -200%);
+  }
+  
+  .icon-block {
+    transform: translate(500%, -200%);
+  }
+
+  .arrow-my_clients-img {
+    width: 300px;
+  }
+
+  .icon-block {
+    display: none;
+  }
+
+  .text-block-p, .text-hero-block-h3 {
+    text-align: center;
+  }
+
+  /*  */
+   /* скрываем картинки */
+  .block-img-hero, .block-img-my_clients {
+    display: none;
+  }
+
+  /* добавляем фон у блока */
+  .block {
+    background: #D4CEC1; /* можно поставить другой цвет или картинку */
+    border-radius: 20px;
+    padding: 30px 20px;
+  }
+
+ .block-my_clients {
+    background: #6C8EBF; /* можешь заменить цвет */
+    border-radius: 20px;
+    padding: 30px 20px;
+  }
+
+.text-hero-my_clients {
+    position: static;
+    transform: none;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* текст по центру внутри прямоугольника */
+  .text-hero-block {
+    position: static;   /* убираем абсолютное позиционирование */
+    transform: none;
+    color: #4E513E;        /* белый текст для контраста */
+    text-align: center;
+  }
+
+  .block1 .text-hero-block, .block2 .text-hero-block {
+        transform: translate(0%, 0%);
+  }
+
+  .text-hero-block-h3, .text-block-p {
+    color: #4E513E;
+  }
+
+.block1 .text-block-p, .block1 .text-hero-block-h3, .block4 .text-block-p, .block4 .text-hero-block-h3 {
+    color: #4E513E;
+}
+
+.block2 .text-block-p, .block2 .text-hero-block-h3 .block3 .text-block-p, .block3 .text-hero-block-h3, .text-hero-block-h3-brown {
+    color: #4E513E;
+}
+
+  /* заголовки и текст в мобильной версии */
+  .text-hero-block-h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .text-block-p {
+    font-size: 16px;
+    min-width: auto;
+    text-align: center;
+  }
+
+  /* убираем иконки */
+  .icon-block {
+    display: none;
+  }
+
+}
+
+@media (max-width: 470px) {
+    .arrow-my_clients-img {
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 410px) {
+    .arrow-my_clients-img {
+    width: 200px;
+  }
+}
+/*  */
+@media (max-width: 1400px) {
+.hero__middle-photo-me {
+  width: 400px;
+  transform: translate(-80%, -50%);
+}
+}
+
+@media (max-width: 1201px) {
+ .bottom-right {
+  margin-top: 400px;
+ }
+
+}
+
+
+@media (max-width: 801px) {
+ .bottom-right {
+  margin-top: 0px;
+ }
+
+}
